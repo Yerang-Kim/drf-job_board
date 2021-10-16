@@ -9,7 +9,7 @@ class JobOffer(models.Model):
     city = models.CharField(max_length=35)
     state = models.CharField(max_length=35)
     created_at = models.DateField(auto_now_add=True)
-    availabe = models.BooleanField(default=True)
+    available = models.BooleanField(default=True)
 
     def __str__(self):
         return self.company_name
